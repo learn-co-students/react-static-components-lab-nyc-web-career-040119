@@ -43,7 +43,7 @@ Ripple.prototype = {
       ${Math.floor(rippleSettings.strokeColor[2])},
       ${this.opacity})`;
   },
-  
+
   draw: function draw() {
     this.ctx.beginPath();
     this.ctx.strokeStyle = this.strokeColor;
@@ -51,7 +51,7 @@ Ripple.prototype = {
       2 * Math.PI);
     this.ctx.stroke();
   },
-  
+
   setStatus: function setStatus(status) {
     this.status = status;
   },
@@ -60,8 +60,6 @@ Ripple.prototype = {
 const canvas = document.querySelector('#canvas');
 const ctx = canvas.getContext('2d');
 const ripples = [];
-
-
 
 const rippleStartStatus = 'start';
 
